@@ -37,7 +37,7 @@ export class Sprite {
   buildFrameMap() {
     let frameCount = 0;
     for (let v = 0; v < this.vFrames; v++) {
-      for (let h = 0; h < this.vFrames; h++) {
+      for (let h = 0; h < this.hFrames; h++) {
         this.frameMap.set(
           frameCount,
           new Vector2(this.frameSize.x * h, this.frameSize.y * v)

@@ -46,6 +46,9 @@ const draw = () => {
 
 setInterval(() => {
   hero.frame += 1;
+  if(hero.frame > 24) {
+    hero.frame = 0;
+  }
   draw();
 }, 300);
 
