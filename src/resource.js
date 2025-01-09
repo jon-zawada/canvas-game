@@ -7,12 +7,12 @@ class Resouces {
       hero: "/sprites/hero-sheet.png",
       shadow: "/sprites/shadow.png"
     }
-    
+
     //a bucket to keep all of our images
     this.images = {};
 
     //load each image
-    Object.keys(this.load).forEach(key => {
+    Object.keys(this.toLoad).forEach(key => {
       const img = new Image();
       img.src = this.toLoad[key];
       this.images[key] = {
@@ -26,3 +26,5 @@ class Resouces {
     });
   }
 }
+
+export const resouces = new Resouces();
